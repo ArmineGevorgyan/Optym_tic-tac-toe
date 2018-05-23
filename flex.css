@@ -1,0 +1,36 @@
+/* body {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+} */
+.gameBoard {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+.flex-item {
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  border: 1px solid black;
+  flex: 1;
+}
+.flex-item:hover:after{
+  content: "O";
+  cursor: pointer;
+}
